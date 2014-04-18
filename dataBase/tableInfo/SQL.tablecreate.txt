@@ -1,0 +1,145 @@
+#this file contains two TABLE create statements, once for the HISTORICAL and one for the DAILYUPDATES, the
+#	only difference between them is the addition of an extra field to the end of the table for DAILYUPDATES
+
+
+CREATE TABLE GDELT_HISTORICAL (
+ GLOBALEVENTID bigint(2) , 
+ SQLDATE int(11) , 
+ MonthYear char(6) , 
+ Year char(4) , 
+ FractionDate double , 
+ Actor1Code char(3) , 
+ Actor1Name char(255) , 
+ Actor1CountryCode char(3) , 
+ Actor1KnownGroupCode char(3) , 
+ Actor1EthnicCode char(3) , 
+ Actor1Religion1Code char(3) , 
+ Actor1Religion2Code char(3) , 
+ Actor1Type1Code char(3) , 
+ Actor1Type2Code char(3) , 
+ Actor1Type3Code char(3) , 
+ Actor2Code char(3) , 
+ Actor2Name char(255) , 
+ Actor2CountryCode char(3) , 
+ Actor2KnownGroupCode char(3) , 
+ Actor2EthnicCode char(3) , 
+ Actor2Religion1Code char(3) , 
+ Actor2Religion2Code char(3) , 
+ Actor2Type1Code char(3) , 
+ Actor2Type2Code char(3) , 
+ Actor2Type3Code char(3) , 
+ IsRootEvent int(11) , 
+ EventCode char(4) , 
+ EventBaseCode char(4) , 
+ EventRootCode char(4) , 
+ QuadClass int(11) , 
+ GoldsteinScale double , 
+ NumMentions int(11) , 
+ NumSources int(11) , 
+ NumArticles int(11) , 
+ AvgTone double , 
+ Actor1Geo_Type int(11) , 
+ Actor1Geo_FullName char(255) , 
+ Actor1Geo_CountryCode char(2) , 
+ Actor1Geo_ADM1Code char(4) , 
+ Actor1Geo_Lat float , 
+ Actor1Geo_Long float , 
+ Actor1Geo_FeatureID int(11) , 
+ Actor2Geo_Type int(11) , 
+ Actor2Geo_FullName char(255) , 
+ Actor2Geo_CountryCode char(2) , 
+ Actor2Geo_ADM1Code char(4) , 
+ Actor2Geo_Lat float , 
+ Actor2Geo_Long float , 
+ Actor2Geo_FeatureID int(11) , 
+ ActionGeo_Type int(11) , 
+ ActionGeo_FullName char(255) , 
+ ActionGeo_CountryCode char(2) , 
+ ActionGeo_ADM1Code char(4) , 
+ ActionGeo_Lat float , 
+ ActionGeo_Long float , 
+ ActionGeo_FeatureID int(11) , 
+ DATEADDED int(11)
+
+);
+
+
+
+
+
+
+CREATE TABLE GDELT_DAILYUPDATES (
+ GLOBALEVENTID bigint(2) , 
+ SQLDATE int(11) , 
+ MonthYear char(6) , 
+ Year char(4) , 
+ FractionDate double , 
+ Actor1Code char(3) , 
+ Actor1Name char(255) , 
+ Actor1CountryCode char(3) , 
+ Actor1KnownGroupCode char(3) , 
+ Actor1EthnicCode char(3) , 
+ Actor1Religion1Code char(3) , 
+ Actor1Religion2Code char(3) , 
+ Actor1Type1Code char(3) , 
+ Actor1Type2Code char(3) , 
+ Actor1Type3Code char(3) , 
+ Actor2Code char(3) , 
+ Actor2Name char(255) , 
+ Actor2CountryCode char(3) , 
+ Actor2KnownGroupCode char(3) , 
+ Actor2EthnicCode char(3) , 
+ Actor2Religion1Code char(3) , 
+ Actor2Religion2Code char(3) , 
+ Actor2Type1Code char(3) , 
+ Actor2Type2Code char(3) , 
+ Actor2Type3Code char(3) , 
+ IsRootEvent int(11) , 
+ EventCode char(4) , 
+ EventBaseCode char(4) , 
+ EventRootCode char(4) , 
+ QuadClass int(11) , 
+ GoldsteinScale double , 
+ NumMentions int(11) , 
+ NumSources int(11) , 
+ NumArticles int(11) , 
+ AvgTone double , 
+ Actor1Geo_Type int(11) , 
+ Actor1Geo_FullName char(255) , 
+ Actor1Geo_CountryCode char(2) , 
+ Actor1Geo_ADM1Code char(4) , 
+ Actor1Geo_Lat float , 
+ Actor1Geo_Long float , 
+ Actor1Geo_FeatureID int(11) , 
+ Actor2Geo_Type int(11) , 
+ Actor2Geo_FullName char(255) , 
+ Actor2Geo_CountryCode char(2) , 
+ Actor2Geo_ADM1Code char(4) , 
+ Actor2Geo_Lat float , 
+ Actor2Geo_Long float , 
+ Actor2Geo_FeatureID int(11) , 
+ ActionGeo_Type int(11) , 
+ ActionGeo_FullName char(255) , 
+ ActionGeo_CountryCode char(2) , 
+ ActionGeo_ADM1Code char(4) , 
+ ActionGeo_Lat float , 
+ ActionGeo_Long float , 
+ ActionGeo_FeatureID int(11) , 
+ DATEADDED int(11) ,
+ SOURCEURL char(255)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
