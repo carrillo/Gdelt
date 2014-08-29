@@ -1,0 +1,5 @@
+value	label
+1	Material Cooperation
+2	Verbal Cooperation
+3 	Verbal Conflict
+4	Materical Conflict
