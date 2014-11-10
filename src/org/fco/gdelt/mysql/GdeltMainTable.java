@@ -96,8 +96,7 @@ public class GdeltMainTable extends Table {
 		keys[ 9 ] = dateAdded.getKey( getDateAddedEntries( tableEntry ) );
 		keys[ 10 ] = source.getKey( getSourceUrlEntries( tableEntry ) );
 		
-		String update = "INSERT INTO " + this.id + " " + getColumnString()
-				+ " VALUES " + getValueString( keys ) + ";";  
+		//String update = "INSERT INTO " + this.id + " " + getColumnString() + " VALUES " + getValueString( keys ) + ";";  
 		
 		insertEntry( keys );
 		return null; 
