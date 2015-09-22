@@ -1,4 +1,5 @@
 /bin
 .classpath
 .project
-src/org/fco/gdelt/hadoop
+#src/org/fco/gdelt/hadoop
+.DS_Store
